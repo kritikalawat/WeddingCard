@@ -1,0 +1,31 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+<style>
+  html,body{margin:0;width:1200px;height:630px;overflow:hidden}
+  body{position:relative;background:
+    radial-gradient(circle at 12% 20%,rgba(232,190,140,.28),transparent 40%),
+    radial-gradient(circle at 88% 78%,rgba(214,160,160,.2),transparent 42%),#FBF7EF;
+    font-family:'Cormorant Garamond',Georgia,serif}
+  .b1{position:absolute;inset:22px;border:3px solid #B8893B}
+  .b2{position:absolute;inset:34px;border:1px solid rgba(184,137,59,.6)}
+  .corner{position:absolute;width:110px;height:110px}
+  .tl{top:10px;left:10px}.tr{top:10px;right:10px;transform:scaleX(-1)}.bl{bottom:10px;left:10px;transform:scaleY(-1)}.br{bottom:10px;right:10px;transform:scale(-1)}
+  .logo{position:absolute;left:50%;top:48%;transform:translate(-50%,-50%);width:430px;height:430px;object-fit:contain}
+  .line{position:absolute;left:0;right:0;bottom:56px;text-align:center;font-size:30px;letter-spacing:.22em;color:#8A611E;text-transform:uppercase}
+</style></head>
+<body>
+<svg width="0" height="0" style="position:absolute"><symbol id="pk" viewBox="0 0 60 60">
+  <path d="M6 6h22M6 6v22" stroke="#B8893B" stroke-width="1.2" fill="none"/>
+  <path d="M6 6q14 8 24 22" stroke="#B8893B" stroke-width="1.1" fill="none"/>
+  <path d="M12 10l3-5M17 13l4-5M21 17l5-4M24 21l6-3M15 12l-5 3M19 16l-5 4M23 20l-4 5" stroke="#B8893B" stroke-width=".7"/>
+  <ellipse cx="34" cy="33" rx="9" ry="6.4" transform="rotate(47 34 33)" fill="#1F6F78" stroke="#B8893B"/>
+  <ellipse cx="34.6" cy="33.6" rx="5.4" ry="3.8" transform="rotate(47 34.6 33.6)" fill="#1D3F7E"/>
+  <circle cx="35" cy="34" r="1.8" fill="#D9B872"/>
+</symbol></svg>
+<div class="b1"></div><div class="b2"></div>
+<svg class="corner tl"><use href="#pk"/></svg><svg class="corner tr"><use href="#pk"/></svg>
+<svg class="corner bl"><use href="#pk"/></svg><svg class="corner br"><use href="#pk"/></svg>
+<img class="logo" src="../assets/logo.png" alt="">
+<div class="line">1 – 2 December 2026 · Udaipur</div>
+</body></html>

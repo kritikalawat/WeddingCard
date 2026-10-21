@@ -1,0 +1,67 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Kritik & Deepti//Wedding//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Kritik & Deepti Wedding
+BEGIN:VEVENT
+UID:sangeet-2027@kritik-deepti-wedding
+DTSTAMP:20261021T000000Z
+SEQUENCE:1
+DTSTART:20270114T133000Z
+DTEND:20270114T173000Z
+SUMMARY:Kritik & Deepti Wedding · Mehfil After Dark — Sangeet
+DESCRIPTION:Dress code: Glamorous festive wear with a touch of sparkle — Kritik & Deepti's wedding celebrations
+LOCATION:Divine Hills Resort\, Sethji Ki Kundal\, Udaipur\, Rajasthan
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:haldi-2027@kritik-deepti-wedding
+DTSTAMP:20261021T000000Z
+SEQUENCE:1
+DTSTART:20270115T053000Z
+DTEND:20270115T073000Z
+SUMMARY:Kritik & Deepti Wedding · Rangon Ki Subah — Haldi
+DESCRIPTION:Dress code: Playful pastels and cheerful daytime colours — Kritik & Deepti's wedding celebrations
+LOCATION:Divine Hills Resort\, Sethji Ki Kundal\, Udaipur\, Rajasthan
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:milan-2027@kritik-deepti-wedding
+DTSTAMP:20261021T000000Z
+SEQUENCE:1
+DTSTART:20270115T083000Z
+DTEND:20270115T123000Z
+SUMMARY:Kritik & Deepti Wedding · Shubh Milan — Baraat\, Varmala & Phere
+DESCRIPTION:Dress code: Traditional Indian attire — Kritik & Deepti's wedding celebrations
+LOCATION:Divine Hills Resort\, Sethji Ki Kundal\, Udaipur\, Rajasthan
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:gala-2027@kritik-deepti-wedding
+DTSTAMP:20261021T000000Z
+SEQUENCE:1
+DTSTART:20270115T130000Z
+DTEND:20270115T170000Z
+SUMMARY:Kritik & Deepti Wedding · The Ivory Gala — Reception
+DESCRIPTION:Dress code: Elegant evening formals — Kritik & Deepti's wedding celebrations
+LOCATION:Divine Hills Resort\, Sethji Ki Kundal\, Udaipur\, Rajasthan
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
