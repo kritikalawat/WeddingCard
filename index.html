@@ -830,10 +830,6 @@ p,h2,h3{text-wrap:balance}
     <div class="medallion reveal"><img src="assets/images/logo.png" alt="Kritik &amp; Deepti wedding logo" width="200" height="200" loading="lazy"></div>
     <h2 class="sr" id="closeTitle">Closing</h2>
     <p class="big reveal" style="--d:1">We look forward to celebrating with you</p>
-    <button class="btn reveal" style="--d:3" type="button" id="shareBtn">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8l7.6-4.4M8.2 13.2l7.6 4.4"/></svg>
-      <span>Share this invite</span>
-    </button>
     <p class="credits">Kritik &amp; Deepti · Udaipur · 2027</p>
   </section>
   <!-- ======= 6. RSVP ======= -->
@@ -1055,20 +1051,10 @@ p,h2,h3{text-wrap:balance}
     para();
   }
 
-  /* ---------- WhatsApp + share ---------- */
+  /* ---------- WhatsApp ---------- */
   const waText = "Hi, we'll be attending Kritik & Deepti's wedding!";
   const waLink = text => `https://wa.me/${CONFIG.WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
   $('#waBtn').href = waLink(waText);
-
-  $('#shareBtn').addEventListener('click', async () => {
-    const url = location.href.split('#')[0];
-    const text = "You're invited to Kritik & Deepti's wedding · 14–15 January 2027 · Udaipur";
-    if (navigator.share) {
-      try { await navigator.share({ title: document.title, text, url }); } catch (e) {}
-    } else {
-      window.open(`https://wa.me/?text=${encodeURIComponent(text + '\n' + url)}`, '_blank', 'noopener');
-    }
-  });
 
   /* ---------- RSVP: embedded Google Form ---------- */
   // Loaded only when the guest nears the RSVP, so it never slows the invite down.
