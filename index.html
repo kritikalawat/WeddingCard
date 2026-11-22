@@ -800,6 +800,7 @@ p,h2,h3{text-wrap:balance}
     <div class="gform">
       <iframe id="gform" title="RSVP form" data-src="https://docs.google.com/forms/d/e/1FAIpQLSc5T4mA9FFqzOoRpF26Hto9oVjKn5vDVenc-wdz64fc-U5ENQ/viewform?embedded=true" loading="lazy">Loading…</iframe>
     </div>
+    <!--
     <p class="or">or</p>
     <div class="center">
     <a class="btn wa" id="waBtn" href="#" target="_blank" rel="noopener">
@@ -807,6 +808,7 @@ p,h2,h3{text-wrap:balance}
           <span>RSVP on WhatsApp</span>
         </a>
     </div>
+    -->
   </section>
 
 </main>
@@ -997,7 +999,8 @@ p,h2,h3{text-wrap:balance}
   /* ---------- WhatsApp ---------- */
   const waText = "Hi, we'll be attending Kritik & Deepti's wedding!";
   const waLink = text => `https://wa.me/${CONFIG.WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
-  $('#waBtn').href = waLink(waText);
+  // RSVP-on-WhatsApp button is commented out in the markup above
+  $('#waBtn')?.setAttribute('href', waLink(waText));
 
   /* ---------- RSVP: embedded Google Form ---------- */
   // Loaded only when the guest nears the RSVP, so it never slows the invite down.
